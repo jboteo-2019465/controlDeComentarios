@@ -126,3 +126,20 @@ export const deletePost = async (req, res) => {
         res.status(500).send({ message: 'Internal server error' });
     }
 };
+
+//Ver los posts
+export const search = async (req, res) =>{
+    try {
+ 
+        let publication = await Post.find().populate({
+            path: 'autor comentarios',
+            select: 'name -_id contenido'
+        })
+        if(!publication) return res.status(404).send({message: 'publication not found'})
+        return res.send(publication)
+       
+    } catch (error) {
+        console.error(error)
+        return res.status(500).send({message: 'Fail get publication'})
+    }
+}

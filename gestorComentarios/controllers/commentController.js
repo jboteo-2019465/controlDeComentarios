@@ -83,10 +83,10 @@ export const updateComment = async (req, res) => {
 //Eliminar comentario
 export const deleteComment = async (req, res) => {
     try {
-        const { commentId } = req.params;
+        let { commentId } = req.params;
 
         // Buscar el post en la base de datos
-        const comment = await Comment.findById(commentId);
+        let comment = await Comment.findById(commentId);
 
         if (!comment) {
             return res.status(404).send({ message: 'Post not found' });
