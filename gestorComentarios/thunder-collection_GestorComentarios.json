@@ -1,0 +1,318 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "GestorComentarios",
+    "dateExported": "2024-03-01T17:41:10.520Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "f977ab37-ad86-4bb6-b5f6-b43d27a6f65a",
+            "name": "login",
+            "containerId": "",
+            "created": "2024-02-29T23:37:22.840Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "b81c28ca-b904-41eb-bbb7-6efd10c5e516",
+            "name": "register",
+            "containerId": "",
+            "created": "2024-02-29T23:37:29.367Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "5295554c-17b4-4741-9510-12c2c1d7d5fb",
+            "name": "user",
+            "containerId": "",
+            "created": "2024-02-29T23:37:40.150Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "7fb2f1de-320e-4aef-a03a-9343a5a3f5a8",
+            "name": "post",
+            "containerId": "",
+            "created": "2024-03-01T00:33:26.153Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "de2c18a5-2f60-42db-a867-43e0805dc194",
+            "name": "comentarios",
+            "containerId": "",
+            "created": "2024-03-01T03:40:09.733Z",
+            "sortNum": 50000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "97834893-5b7f-4f7a-a76c-670036649aa6",
+            "colId": "36c38a43-2f90-4e31-8699-11a510a03be7",
+            "containerId": "f977ab37-ad86-4bb6-b5f6-b43d27a6f65a",
+            "name": "login",
+            "url": "http://localhost:3000/login",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-29T23:37:46.908Z",
+            "modified": "2024-03-01T01:21:28.693Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "usernameoremail",
+                        "value": "Manuel"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "39207823-9283-4aba-a8dc-12aa50f5b177",
+            "colId": "36c38a43-2f90-4e31-8699-11a510a03be7",
+            "containerId": "5295554c-17b4-4741-9510-12c2c1d7d5fb",
+            "name": "update",
+            "url": "http://localhost:3000/update",
+            "method": "PUT",
+            "sortNum": 20000,
+            "created": "2024-02-29T23:38:37.630Z",
+            "modified": "2024-03-01T00:27:20.176Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZTEyMDUzYWQ3Y2NkNzUxZjMwNDhmYiIsImlhdCI6MTcwOTI1MjcwMiwiZXhwIjoxNzA5MjY3MTAyfQ.xnosUdYKsaDwwpcuVPqAoyRtwIa9AAR-205WQ_NbYks"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Maria",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "password",
+                        "value": "123456",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "newPassword",
+                        "value": "1234567"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "7a005c2f-8edc-4270-aba4-95dea8a9e36c",
+            "colId": "36c38a43-2f90-4e31-8699-11a510a03be7",
+            "containerId": "b81c28ca-b904-41eb-bbb7-6efd10c5e516",
+            "name": "register",
+            "url": "http://localhost:3000/register",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-02-29T23:39:01.815Z",
+            "modified": "2024-03-01T01:21:13.460Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "Manuel"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345"
+                    },
+                    {
+                        "name": "email",
+                        "value": "manuel@gmail.com"
+                    },
+                    {
+                        "name": "name",
+                        "value": "neto"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "bran"
+                    },
+                    {
+                        "name": "telefono",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "4864b198-8261-40bb-b8af-c95aa656042f",
+            "colId": "36c38a43-2f90-4e31-8699-11a510a03be7",
+            "containerId": "7fb2f1de-320e-4aef-a03a-9343a5a3f5a8",
+            "name": "createPost",
+            "url": "http://localhost:3000/createPost",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-03-01T01:18:58.534Z",
+            "modified": "2024-03-01T01:22:51.521Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZTEyZDg5MDg4NzI2MGQ5YWM0OTE4OCIsImlhdCI6MTcwOTI1NjA4OCwiZXhwIjoxNzA5MjcwNDg4fQ.rDIisxnD_SkiU1TFrm8bGDCkl_6fSajTH6HKEZd0hBc"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "titulo",
+                        "value": "Neto bran y la poca agua de mixco"
+                    },
+                    {
+                        "name": "categoria",
+                        "value": "Noticia"
+                    },
+                    {
+                        "name": "contenido",
+                        "value": "la ezcases de agua de mixco se hace notar"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "8139c303-e9b6-4ae2-8e0b-076d06928fec",
+            "colId": "36c38a43-2f90-4e31-8699-11a510a03be7",
+            "containerId": "7fb2f1de-320e-4aef-a03a-9343a5a3f5a8",
+            "name": "updatePost",
+            "url": "http://localhost:3000/posts/65e12deb0887260d9ac4918e",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-03-01T01:40:23.496Z",
+            "modified": "2024-03-01T03:22:32.364Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZTEyZDg5MDg4NzI2MGQ5YWM0OTE4OCIsImlhdCI6MTcwOTI1NjA4OCwiZXhwIjoxNzA5MjcwNDg4fQ.rDIisxnD_SkiU1TFrm8bGDCkl_6fSajTH6HKEZd0hBc"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "titulo",
+                        "value": "Neto Bran y el agua"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "5b6858c5-99e3-4788-b62a-4ed482bff3c2",
+            "colId": "36c38a43-2f90-4e31-8699-11a510a03be7",
+            "containerId": "7fb2f1de-320e-4aef-a03a-9343a5a3f5a8",
+            "name": "eliminarPost",
+            "url": "http://localhost:3000/posts/65e12deb0887260d9ac4918e",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2024-03-01T03:34:29.601Z",
+            "modified": "2024-03-01T03:36:47.742Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZTEyZDg5MDg4NzI2MGQ5YWM0OTE4OCIsImlhdCI6MTcwOTI2NDE5NSwiZXhwIjoxNzA5Mjc4NTk1fQ.bLLvuk_ejmKSsn1L5C1ldqBQXDf6cUxYLAwR258JR4E"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "cb363933-4703-4416-a19f-e8c253f5702b",
+            "colId": "36c38a43-2f90-4e31-8699-11a510a03be7",
+            "containerId": "de2c18a5-2f60-42db-a867-43e0805dc194",
+            "name": "crear comentario",
+            "url": "http://localhost:3000/posts/65e1527d230550575c605b49/comments",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-03-01T03:58:16.859Z",
+            "modified": "2024-03-01T16:13:02.199Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZTEyZDg5MDg4NzI2MGQ5YWM0OTE4OCIsImlhdCI6MTcwOTMwOTU2OSwiZXhwIjoxNzA5MzIzOTY5fQ.Rfs5flA3SHnrc7S7SJgtIJ3VDVJdT3ZFniOYOP4L5BI"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "contenido",
+                        "value": "muy cierto"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "036d2b1d-8c82-40eb-a321-c0e20e6a073b",
+            "colId": "36c38a43-2f90-4e31-8699-11a510a03be7",
+            "containerId": "de2c18a5-2f60-42db-a867-43e0805dc194",
+            "name": "editarComentario",
+            "url": "http://localhost:3000/posts/65e20abc9d4d11a244996391/comments",
+            "method": "PUT",
+            "sortNum": 80000,
+            "created": "2024-03-01T04:15:38.414Z",
+            "modified": "2024-03-01T17:29:15.073Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZTEyZDg5MDg4NzI2MGQ5YWM0OTE4OCIsImlhdCI6MTcwOTMxNDEyMCwiZXhwIjoxNzA5MzI4NTIwfQ.kjqvR_lUwb4xMk7UsHjRgzB_jnLQZU6RCtr7UfdeoHU"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "contenido",
+                        "value": "A mi tampoco me llega"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "a7c73489-3d0c-4450-a39c-119c9cf754ea",
+            "colId": "36c38a43-2f90-4e31-8699-11a510a03be7",
+            "containerId": "de2c18a5-2f60-42db-a867-43e0805dc194",
+            "name": "eliminarComentario",
+            "url": "http://localhost:3000/posts/65e159df6630ff5a06cce9c5/comments",
+            "method": "DELETE",
+            "sortNum": 90000,
+            "created": "2024-03-01T04:26:35.166Z",
+            "modified": "2024-03-01T04:30:52.354Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZTEyZDg5MDg4NzI2MGQ5YWM0OTE4OCIsImlhdCI6MTcwOTI2NjU3MywiZXhwIjoxNzA5MjgwOTczfQ.PSVcgPX_svXRr5l3_EpPpYbrLeBlQ6_ayV3LroT9CQI"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
